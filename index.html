@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>DarkMode</title>
+  </head>
+  <body>
+    <div class="mode-toggle"></div>
+
+    <div class="container">
+      <div class="dark-mode"></div>
+    </div>
+
+    <h1>Dark mode</h1>
+  </body>
+
+  <script>
+    let modetoggle = document.querySelector(".mode-toggle");
+    let darkmode = document.querySelector(".dark-mode");
+
+    modetoggle.addEventListener("click", () => {
+      darkmode.classList.toggle("active");
+      modetoggle.classList.toggle("active");
+    });
+  </script>
+</html>
